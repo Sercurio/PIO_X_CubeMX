@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "display_helper.h": "c"
+        "display_helper.h": "c",
+        "stm32g4xx_hal.h": "c",
+        "stm32g4xx_hal_conf.h": "c"
     }
 }

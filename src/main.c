@@ -56,6 +56,7 @@ static void MX_SPI2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+#include <arm_math.h>
 #include <ssd1306.h>
 
 /* USER CODE END 0 */
@@ -94,6 +95,9 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 
+  // Try CMSIS6 functions
+  arm_cfft_instance_q15 S;
+  arm_cfft_init_q15(&S, 128);
   /* USER CODE END 2 */
 
   /* Infinite loop */
